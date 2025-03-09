@@ -1,9 +1,16 @@
 import FavouriteArticles from "@/components/FavouriteArticles/FavouriteArticles";
+import { Suspense } from "react";
 
 export default function Page() {
+    const idsPosts = [2, 4, 5, 3];
+
     return (
         <>
-            <FavouriteArticles/>
+            {idsPosts.map((id) => (
+                <Suspense key={id} fallback={<p>Loading articles...</p>}>
+                    <FavouriteArticles id={id} />
+                </Suspense>
+            ))}
         </>
-    )
+    );
 }
