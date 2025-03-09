@@ -1,3 +1,9 @@
+import FavouriteArticles from "@/components/FavouriteArticles/FavouriteArticles";
+
 export default function Page() {
-    return <h1>Page articles/favorite</h1>
+    return (
+        <>
+            <FavouriteArticles/>
+        </>
+    )
 }
