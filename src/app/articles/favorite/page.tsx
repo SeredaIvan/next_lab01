@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <>
             {idsPosts.map((id) => (
-                <Suspense key={id} fallback={<p>Loading articles...</p>}>
+                <Suspense key={id} fallback={<p>Loading post...</p>}>
                     <FavouriteArticles id={id} />
                 </Suspense>
             ))}
