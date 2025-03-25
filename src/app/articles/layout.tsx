@@ -1,7 +1,7 @@
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import {ArticlesLayoutProps} from "@/types/types";
 
-export default function ArticlesLayout({ children }) {
+export default function ArticlesLayout({ children }:ArticlesLayoutProps) {
 
     const urls = [
         {title :'Всі статті', href:'/articles'},

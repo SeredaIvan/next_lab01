@@ -1,6 +1,7 @@
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
+import {ProfileLayoutProps} from "@/types/types";
 
-export default function ArticlesLayout({ children }) {
+export default function ArticlesLayout({ children }:ProfileLayoutProps) {
     const urls = [
         {title : 'Статті', href : '/articles'},
         {title : 'Профіль', href : '/profile/settings'},
