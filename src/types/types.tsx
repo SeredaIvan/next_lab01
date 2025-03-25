@@ -1,8 +1,9 @@
 import {ReactNode} from "react";
 
-export type PageProps={
-    id: string;
+export type PageProps= {
+    params: Promise<{ id: string }>
 }
+
 export type Post = {
     userId:number,
     id:number,
@@ -27,3 +28,6 @@ export type Url={
     title:string,
     href:string
 }
+export type NavigationBarProps = {
+    urls: Url[];
+};

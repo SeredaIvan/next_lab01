@@ -4,15 +4,27 @@ import {PageProps, Post} from "@/types/types";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-    return [...Array(10)].map((_, i) => ({ id: (i + 1).toString() }));
+    return [
+        { id: "1" },
+        { id: "2" },
+        { id: "3" },
+        { id: "4" },
+        { id: "5" },
+        { id: "6" },
+        { id: "7" },
+        { id: "8" },
+        { id: "9" },
+        { id: "10" },
+    ];
 }
 
 
-const Page = async ( {params}:{params: Promise<{ id: string }>}) => {
+const Page = async ( {params}:PageProps) => {
     const resolvedParams = await params
     const id:number = parseInt(resolvedParams.id);
     const post:Post = await fetchOnePost(id);
-    const path:string=`/articles/${id}/coments`
+    const path:string=`/articles/${id}/comments`
+
 
     return (
         <>

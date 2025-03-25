@@ -1,8 +1,9 @@
 "use client"
 import {usePathname} from "next/navigation";
 import NavigationTail from "@/components/NavigationBar/NavigationTail/NavigationTail";
+import {NavigationBarProps} from "@/types/types";
 
-function NavigationBar({urls}){
+function NavigationBar({urls}:NavigationBarProps){
     const pathname= usePathname()
     return(
         <header>

@@ -1,7 +1,4 @@
 import Image from "next/image";
-import fetchPosts from "@/scripts/fetcher";
-
-
 
 export default function Home() {
 

@@ -3,9 +3,22 @@ import {PageProps, Post} from "@/types/types";
 import CommentList from "@/components/ComentsList/ComentsList";
 import PostCard from "@/components/PostCard/PostCard";
 
+export async function generateStaticParams() {
+    return [
+        { id: "1" },
+        { id: "2" },
+        { id: "3" },
+        { id: "4" },
+        { id: "5" },
+        { id: "6" },
+        { id: "7" },
+        { id: "8" },
+        { id: "9" },
+        { id: "10" }
+        ]
+}
 
-
-const Page = async ( {params}:{params: Promise<{ id: string }>}) => {
+    const Page = async ( {params}:PageProps) => {
     const resolvedParams = await params
 
     const id:number = parseInt(resolvedParams.id, 10)

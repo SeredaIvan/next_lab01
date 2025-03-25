@@ -1,6 +1,6 @@
-import {Comment} from "@/types/types";
 import CommentTile from "@/components/CommentsTile/CommentTile";
 import {fetchComentsByPostId} from "@/scripts/fetcher";
+import {Comment} from "@/types/types";
 
 const CommentList = async ({ id }: { id: number }) => {
     const comments:Comment[]= await fetchComentsByPostId(id)
