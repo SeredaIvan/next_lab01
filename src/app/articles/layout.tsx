@@ -1,4 +1,5 @@
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
+import {ArticlesLayoutProps} from "@/types/types";
 
 export default function ArticlesLayout({ children }) {
 

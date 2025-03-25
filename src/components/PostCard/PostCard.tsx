@@ -1,4 +1,6 @@
-const PostCard = ({ title, body }) => {
+import {Post} from "@/types/types";
+
+const PostCard = ({ userId, id, title, body }:Post) => {
     return (
         <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 bg-gray-500'>
             <div className="max-w-sm rounded overflow-hidden shadow-lg m-3 bg-white-500">

@@ -1,16 +1,28 @@
-const CommentList = ({ comments }: { comments: { id: number, name: string, body: string }[] }) => {
-    if (!comments.length) return <p className="text-gray-500">No comments available.</p>;
+import {Comment} from "@/types/types";
+import CommentTile from "@/components/CommentsTile/CommentTile";
+import {fetchComentsByPostId} from "@/scripts/fetcher";
+
+const CommentList = async ({ id }: { id: number }) => {
+    const comments:Comment[]= await fetchComentsByPostId(id)
+
+    if (comments.length === 0) return <p className="text-gray-500">No comments available.</p>;
 
     return (
         <div className="mt-4">
             <h3 className="text-lg font-semibold mb-2">Comments:</h3>
             <ul>
-                {comments.map(comment => (
-                    <li key={comment.id} className="border-b py-2">
-                        <p className="text-sm font-bold">{comment.name}</p>
-                        <p className="text-gray-700">{comment.body}</p>
-                    </li>
-                ))}
+                {comments.map((comment:Comment) => {
+                    return (
+                        <CommentTile
+                            key={comment.id}
+                            id={comment.id}
+                            name={comment.name}
+                            body={comment.body}
+                            postId={comment.postId}
+                            email={comment.email}
+                        />
+                    );
+                })}
             </ul>
         </div>
     );

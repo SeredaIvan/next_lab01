@@ -1,0 +1,29 @@
+import {ReactNode} from "react";
+
+export type PageProps={
+    id: string;
+}
+export type Post = {
+    userId:number,
+    id:number,
+    title:string,
+    body:string
+}
+export type Comment ={
+    postId:number,
+    id:number,
+    name:string,
+    email:string,
+    body:string
+}
+export type LayoutProps = {
+    children: ReactNode
+}
+
+export type ProfileLayoutProps = LayoutProps
+export type ArticlesLayoutProps = LayoutProps
+
+export type Url={
+    title:string,
+    href:string
+}

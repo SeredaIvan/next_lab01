@@ -2,7 +2,7 @@ import {fetchPosts} from "@/scripts/fetcher";
 import PostCard from "@/components/PostCard/PostCard";
 
 const Page = async ():Promise <any > => {
-    const posts = await fetchPosts() || [];
+    const posts = await fetchPosts() || []
 
     return (
         <div className="flex flex-wrap">
