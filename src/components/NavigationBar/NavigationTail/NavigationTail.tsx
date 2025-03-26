@@ -8,12 +8,12 @@ interface NavigationTailProps {
     active: boolean;
 }
 
-const NavigationTail: React.FC<NavigationTailProps> = ({ title, href, active }) => (
+const NavigationTail: React.FC<NavigationTailProps> = ({ title, href, active , styles }) => (
     <Link
         href={href}
         className={clsx(
-            "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ",
-            active && "bg-sky-700 text-white rounded px-2 py-1"
+            styles.tail,
+            active && styles.active
         )}
     >
         {title}
