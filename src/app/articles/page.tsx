@@ -2,6 +2,10 @@ import {fetchPosts} from "@/scripts/fetcher";
 import PostCard from "@/components/PostCard/PostCard";
 import {JSX} from "react";
 
+export async function generateStaticParams() {
+    return [{}]
+}
+
 const Page = async ():Promise <JSX.Element> => {
     const posts = await fetchPosts() || []
 
