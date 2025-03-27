@@ -2,6 +2,7 @@
 @use "@/styles/typography";
 @use "tailwindcss";
 
+
 :root {
   --breakpoint-xs: 400px;
   --breakpoint-2xl: 1536px;
@@ -58,5 +59,5 @@ body {
   background-color: var(--color-palitra-1-3);
 }
 .bg-palitra-1-5 {
-  color: var(--color-palitra-1-5);
+  background-color: var(--color-palitra-1-5);
 }

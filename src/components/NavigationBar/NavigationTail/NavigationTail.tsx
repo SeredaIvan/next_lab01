@@ -6,6 +6,7 @@ interface NavigationTailProps {
     title: string;
     href: string;
     active: boolean;
+    styles: { readonly [key: string]: string };
 }
 
 const NavigationTail: React.FC<NavigationTailProps> = ({ title, href, active , styles }) => (

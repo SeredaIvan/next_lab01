@@ -1,29 +1,31 @@
+import React from "react";
+import { fetchComentsByPostId } from "@/scripts/fetcher";
+import { Comment } from "@/types/types";
 import CommentTile from "@/components/CommentsTile/CommentTile";
-import {fetchComentsByPostId} from "@/scripts/fetcher";
-import {Comment} from "@/types/types";
+import {List} from "@mui/material";
 
 const CommentList = async ({ id }: { id: number }) => {
-    const comments:Comment[]= await fetchComentsByPostId(id)
+    const comments: Comment[] = await fetchComentsByPostId(id);
 
-    if (comments.length === 0) return <p className="text-gray-500">No comments available.</p>;
+    if (comments.length === 0) {
+        return <p className="text-gray-500">No comments available.</p>;
+    }
 
     return (
         <div className="mt-4">
             <h3 className="text-lg font-semibold mb-2">Comments:</h3>
-            <ul>
-                {comments.map((comment:Comment) => {
-                    return (
-                        <CommentTile
-                            key={comment.id}
-                            id={comment.id}
-                            name={comment.name}
-                            body={comment.body}
-                            postId={comment.postId}
-                            email={comment.email}
-                        />
-                    );
-                })}
-            </ul>
+            <List sx={{ width: "100%", maxWidth: 360, bgcolor: "bg-palitra-1-2" }}>
+                {
+                    comments.map((comment: Comment) => (
+                    <CommentTile key={comment.id}
+                                 id={comment.id}
+                                 name={comment.name}
+                                 email={comment.email}
+                                 body={comment.body}
+                                 postId={comment.postId}/>
+                ))
+                }
+            </List>
         </div>
     );
 };

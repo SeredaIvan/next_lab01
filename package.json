@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/material": "^7.0.0",
+    "@mui/styled-engine-sc": "^7.0.0",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
     "next": "15.2.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.86.0"
+    "sass": "^1.86.0",
+    "styled-components": "^6.1.16"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
