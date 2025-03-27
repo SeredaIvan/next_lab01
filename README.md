@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Фото виконаної роботи**
 
-## Getting Started
+`abdd920` **added routing and active menu items**  
+![image]( /photo_comlplete_work/added%20routing%20and%20active%20menu%20items.png)
 
-First, run the development server:
+`0d89096` **created get request to all articles and page all articles**  
+![image]( /photo_comlplete_work/created%20get%20request%20to%20all%20articles%20and%20page%20all%20articles.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`999807b` **loading indicators added**  
+![image]( /photo_comlplete_work/loading%20indicators%20added.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`1708acc` **dynamic pages added**  
+![image]( /photo_comlplete_work/dynamic%20pages%20added.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`1abe761` **page comments added**  
+![image]( /photo_comlplete_work/page%20coments%20added.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`2cf49fd` **successfully build**  
+![image]( /photo_comlplete_work/succesfully%20build%202.png)
 
-## Learn More
+`2cf49fd` **successfully build 2**  
+![image]( /photo_comlplete_work/succesfully%20build.png)
 
-To learn more about Next.js, take a look at the following resources:
+`afa9bfe` **global scss files created**  
+![image]( /photo_comlplete_work/global%20scss%20files%20created.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`035aa0a` **added menu styling**  
+![image]( /photo_comlplete_work/added%20menu%20styling.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`ad025fa` **customize tailwind classes**  
+![image]( /photo_comlplete_work/castomize%20tailwind%20classes.png)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`c2a667a` **added mui components**  
+![image]( /photo_comlplete_work/added%20mui%20components.png)
